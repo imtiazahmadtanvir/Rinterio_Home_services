@@ -45,6 +45,19 @@
         }
       </script>  
 
+      <script>
+        module.exports = {
+              theme: {
+                extend: {
+                  backgroundOpacity: {
+                    '10': '0.1',
+                    '90': '0.9',
+                  },
+                },
+              },
+            }      
+      </script>
+
 </head>
 <body class="Manrope">
                                         <!-- First section -->
@@ -93,7 +106,7 @@
         </div>
         <br>
         <div>
-          <h1 class="text-5xl py-6 font-bold text-black">A barn house of this design has a striking appearance</h1>
+          <h1 class="text-4xl md:text-5xl lg:text-5xl py-6 font-bold text-black">A barn house of this design has a striking appearance</h1>
         </div>
         
         <div>
@@ -112,60 +125,66 @@
       </main>
   
     </section>
+    
                                         <!-- 2nd Section -->
-    <section class="bg-gray-100  pt-10 pb-24 ">
-      <div class="">
-                <!-- vector image -->
-              <div class="hidden md:hidden lg:block relative pt-10 pb-5 pl-10 ml-20 mr-10 ">
-                <img class="" src="assets/Vector.png" alt="">
-              </div>
+    <section class="bg-gray-100 pt-10 pb-24">
+               
+                  <div class="relative  flex flex-col lg:h-full ">    
+                                              <!-- Section 2 main section -->
+                        <div class="hero-content relative flex flex-col lg:flex-row  text-center lg:space-x-5 lg:text-left  mx-auto  " >
+                                                                    <!-- Left section -->
+                                    <div>
+                                      
+                                      <div class="absolute object-cover hidden md:hidden lg:block lg:w-1/4 ">
+                                          <img class="" src="assets/Vector.png" alt="vector image">
+                                      </div>  
 
-                              <!-- Section 2 main section -->
-              <div class="relative flex flex-col lg:flex-row text-center lg:text-left mx-auto justify-center ml-10 mr-10  " >
-                                  <!-- Left section -->
-                <div class="relative  flex flex-col  ">
-                        <button class="lg:text-left"><a href="#" class="relative inline-block font-bold text-sm bg-white rounded-lg text-gray-900 p-3 m-3 border-1 mb-9 hover:bg-yellow-300">→ About Us</a>
-                        </button>
-                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:text-center lg:text-left">We design thoughtful, liveable spaces</h2>
-                        <br>
-                        <p class="text-gray-600 mb-8 w-3/4l lg:text-left md:text-center lg:w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                                      
+                                      <div class="relative  flex flex-col lg:h-1/2 lg:pl-10">
+ 
+                                        <button class="lg:text-left lg:mt-20"><a href="#" class="relative inline-block font-bold text-sm bg-white rounded-lg text-gray-900 p-3  border-1 mb-9 hover:bg-yellow-300">→ About Us</a></button>
+                                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:text-center lg:w-3/4 lg:text-left lg:mx-0 mx-auto ">We design thoughtful, liveable spaces</h2>
+                                        <p class="text-gray-600 mb-8  lg:text-left md:text-center text-center mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                                        
+                                      <div class="flex flex-col  lg:flex-col md:flex-row md:mb-10 lg:mt-3 gap-5">
+
+                                            <div class="p-6 bg-white rounded-lg shadow">
+                                              <div class="flex items-center space-x-1">
+                                                <img src="assets/commercial.png" alt="">
+                                                <h3 class="text-lg font-semibold text-gray-900">Commercial</h3>
+                                              </div>
+                                              <p class="mt-4  text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+                                            </div>
+                                            
+                                            <div class="p-6 bg-white rounded-lg shadow">
+                                              <div class="flex items-center space-x-3">
+                                                <div class="text-gray-700">
+                                                  <img src="assets/residential.png" alt="">
+                                                </div>
+                                                <h3 class="text-lg font-semibold text-gray-900">Residential</h3>
+                                              </div>
+                                              <p class="mt-4 text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+                                            </div>
+
+                                      </div>
+                                    </div>
                         
-                        <div class="flex flex-col  lg:flex-col md:flex-row md:mb-10 gap-5">
 
-                              <div class="p-6 bg-white rounded-lg shadow lg:w-3/4">
-                                <div class="flex items-center space-x-1">
-                                  <img src="assets/commercial.png" alt="">
-                                  <h3 class="text-lg font-semibold text-gray-900">Commercial</h3>
-                                </div>
-                                <p class="mt-4 text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
-                              </div>
-                              
-                              <div class="p-6 bg-white rounded-lg shadow lg:w-3/4">
-                                <div class="flex items-center space-x-3">
-                                  <div class="text-gray-700">
-                                    <img src="assets/residential.png" alt="">
-                                  </div>
-                                  <h3 class="text-lg font-semibold text-gray-900">Residential</h3>
-                                </div>
-                                <p class="mt-4 text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
-                              </div>
+
+                                    </div>
+                                                        <!-- Right Side of the section -->
+                                    <div class="md:object-cover  pt-10 md:pt-10 md:w-full lg:w-4/5 lg:h-4/5 mx-auto lg:pt-22" >
+                                      <figure class=""><img class="w-full  justify-center items-center md:h-full mx-auto h-full md:md:object-cover " src="assets/Rectangle.png" alt=""></figure>
+                                    </div>
 
                         </div>
-
-
-                </div>
-                                  <!-- Right Side of the section -->
-                <div class="relative md:object-cover mt-10 md:mt-10 lg:mt-0" >
-                  <figure class=""><img class="md:w-full md:h-full md:md:object-cover " src="assets/Rectangle.png" alt=""></figure>
-
-                </div>
-      </div>
-        
+      
+                  </div>  
                                 
     </section>
                                         <!-- 3rd Section  -->
     <section class="flex flex-row   bg-gray-100  mx-auto" >
-      <div class="flex flex-col mt-14 gap-6 md:flex-row p-10 lg;flex-row  bg-white rounded-lg shadow w-2/3 mb-10 justify-around mx-auto">
+      <div class="flex flex-col mb-24 gap-6 md:flex-row p-10 lg;flex-row  bg-white rounded-lg shadow w-2/3  justify-around mx-auto">
         
         <div class="flex-col justify-center items-center text-center ">
           <div class="justify-center items-center text-center mx-auto pb-2">
@@ -337,7 +356,7 @@
     </section>
     
                                         <!-- form section -->
-    <section class=" pt-24 pb-40 pr-10 pl-10"  style="background-image: url('assets/bg.jpg');">
+    <section class="pt-24 pb-40 pr-10 pl-10"  style="background-image: url('assets/bg.jpg');">
       <main  class="bg-cover bg-center h-auto">
         <div class="text-black justify-center items-center relative text-center">
           <button class="text-center justify-center "><a href="#" class="relative inline-block font-bold text-sm bg-green-100 rounded-lg text-gray-900 p-3 m-3 border-1 mb-9 hover:bg-yellow-300">→ Lets connect</a></button>
